@@ -1,0 +1,8 @@
+.form-error {
+  background-color: $error-background-color;
+  border-radius: $base-border-radius;
+  color: #fff;
+  letter-spacing: $small-letter-spacing;
+  margin-bottom: $small-vertical-spacing;
+  padding: ($base-vertical-spacing / 4) ($base-vertical-spacing / 3);
+}
