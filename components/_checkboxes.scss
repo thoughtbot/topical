@@ -1,0 +1,79 @@
+$_checkbox-size: 1.25rem;
+
+.checkbox {
+  margin-bottom: $base-vertical-spacing;
+}
+
+.checkbox--disabled {
+  cursor: default;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.checkbox__checkmark,
+.checkbox__input {
+  display: inline-block;
+  height: $_checkbox-size;
+  vertical-align: top;
+  width: $_checkbox-size;
+}
+
+.checkbox__checkmark {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    background: $base-font-color;
+    border: $strong-border;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0.0625rem $coin;
+    height: $_checkbox-size;
+    width: $_checkbox-size;
+  }
+
+  &::after {
+    background: transparent;
+    border: 0.25rem solid $smoke;
+    border-radius: 0.0625rem;
+    border-right: none;
+    border-top: none;
+    height: 0.625rem;
+    left: 0.0625rem;
+    opacity: 0;
+    top: 0.0625rem;
+    transform: rotate(-50deg);
+    width: 1.375rem;
+  }
+}
+
+.checkbox__input {
+  opacity: 0.001;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+
+  &:checked + .checkbox__checkmark::after {
+    opacity: 1;
+  }
+
+  &:focus + .checkbox__checkmark::before {
+    border: 1px solid $action-color;
+    box-shadow: inset 0 1px rgba($base-background-color, 0.36), 0 0 0 2px $action-color;
+  }
+
+  &:active + .checkbox__checkmark::before {
+    background-color: $strong-border-color;
+    border: 1px solid $strong-border-color;
+    box-shadow: none;
+  }
+}
+
+.checkbox__label {
+  display: inline;
+}
