@@ -10,3 +10,9 @@
 @import "core/media";
 @import "core/tables";
 @import "core/typography";
+
+body {
+  padding: 3rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
