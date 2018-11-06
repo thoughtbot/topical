@@ -1,0 +1,12 @@
+.text-link {
+  display: inline;
+  text-decoration: underline;
+  box-shadow:
+    0 -0.5em 0 rgba($action-color, 0.9) inset,
+    0 0.05em 0 rgba($action-color, 0.9);
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 -0.125em 0 rgba($action-color, 1) inset;
+  }
+}
