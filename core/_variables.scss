@@ -54,7 +54,9 @@ $action-color: $lake;
 
 // Borders
 $base-border-color: $coin;
-$base-border: 0.0625px solid $base-border-color;
+$strong-border-color: $coal;
+$base-border: 0.0625rem solid $base-border-color;
+$strong-border: 0.0625rem solid $strong-border-color;
 
 // Background Colors
 $viewport-background-color: whitesmoke;
