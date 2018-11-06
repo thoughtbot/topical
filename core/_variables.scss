@@ -1,0 +1,79 @@
+// Typography
+$base-font-family:
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Avenir Next",
+  "Avenir",
+  "Segoe UI",
+  "Lucida Grande",
+  "Roboto",
+  "Droid Sans",
+  sans-serif;
+
+// Line height
+$base-line-height: (5/3);
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 0.25rem;
+$base-spacing: $base-line-height * 1rem;
+$small-spacing: $base-spacing / 2;
+$base-gutter: 2rem;
+$component-gutter: 1.375rem;
+$base-z-index: 0;
+
+// Font Sizes
+$base-font-size: 0.8125rem;
+$form-element-font-size: 0.875rem;
+
+// Letter Spacing
+$small-letter-spacing: 0.03125em;
+
+// Colors
+$blue: #6FB5F1;
+$green: #2AA69B;
+$red: #ec514e;
+$light-green: #00FFE9;
+$black-gray: #2E3030;
+$dark-gray: #454646;
+$gray: #868989;
+$light-gray: #c6c8c8;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$secondary-font-color: $gray;
+$action-color: $blue;
+
+// Borders
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: whitesmoke;
+$base-background-color: white;
+$error-background-color: $red;
+
+// Focus
+$focus-outline-color: rgba($action-color, 0.4);
+$focus-outline-width: 0.1875rem;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 0.125rem;
+
+// Effects
+$dark-gradient: linear-gradient(140deg, $dark-gray 0%, $black-gray 100%);
+$light-gradient: linear-gradient(180deg, $base-background-color 0%, $viewport-background-color 100%);
+$box-shadow:
+  inset 0 0.0625rem rgba(black ,0.05),
+  0 1.25rem 1rem -1.5rem rgba($dark-gray, 0.5),
+  0 0.75rem 1.75rem -0.25rem rgba($dark-gray, 0.6),
+  0 1.25rem 2.5rem rgba($dark-gray, 0.3);
+$form-element-box-shadow:
+  inset 0 0.0625rem rgba(black ,0.05),
+  0 1.125rem 1rem rgba(black, 0.1),
+  0 0.25rem 0.5rem rgba(black , 0.05);
+$form-element-box-shadow--focus: 0 0 0 0.125rem $action-color;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
