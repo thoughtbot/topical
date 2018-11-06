@@ -1,0 +1,12 @@
+.card {
+  background-color: $base-background-color;
+  background-image: $light-gradient;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  padding: $base-vertical-spacing $component-gutter;
+  width: 100%;
+
+  &:hover {
+    background-image: none;
+  }
+}
