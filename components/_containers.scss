@@ -1,0 +1,17 @@
+$_container-max-width: 62rem;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $_container-max-width;
+  padding-left: $base-gutter;
+  padding-right: $base-gutter;
+}
+
+.container--center {
+  text-align: center;
+}
+
+.container--narrow {
+  max-width: $_container-max-width / 2;
+}
