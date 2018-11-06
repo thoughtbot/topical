@@ -1,0 +1,25 @@
+.heading {
+  line-height: $heading-line-height;
+  margin-bottom: $base-vertical-spacing;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.heading--primary {
+  color: $secondary-font-color;
+  font-size: 3rem ;
+}
+
+.heading--secondary {
+  color: $secondary-font-color;
+  font-size: 2.125rem;
+}
+
+.heading--tertiary {
+  font-size: 1.625rem;
+}
+
+.heading--quaternary {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
