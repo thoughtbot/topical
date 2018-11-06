@@ -38,7 +38,6 @@ textarea {
 [type='time'],
 [type='url'],
 [type='week'],
-input:not([type]),
 select,
 textarea {
   appearance: none;
@@ -55,10 +54,6 @@ textarea {
   margin: 0 0 $base-vertical-spacing 0;
   padding: $base-vertical-spacing / 3;
   width: 100%;
-
-  &:focus {
-    outline: none;
-  }
 
   &:disabled {
     opacity: 0.3;
