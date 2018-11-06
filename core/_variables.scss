@@ -12,8 +12,8 @@ $base-font-family:
   sans-serif;
 
 // Line height
-$base-line-height: (5/3);
-$heading-line-height: 1.2;
+$base-line-height: (5 / 3);
+$heading-line-height: 1.125;
 
 // Other Sizes
 $base-border-radius: 0.25rem;
@@ -31,28 +31,28 @@ $form-element-font-size: 0.875rem;
 $small-letter-spacing: 0.03125em;
 
 // Colors
-$blue: #6FB5F1;
-$green: #2AA69B;
-$red: #ec514e;
-$light-green: #00FFE9;
-$black-gray: #2E3030;
-$dark-gray: #454646;
-$gray: #868989;
-$light-gray: #c6c8c8;
+$lake: #6FB5F1;
+$moss: #2AA69B;
+$cadmium: #ec514e;
+$grass: #00FFE9;
+$coal: #2E3030;
+$graphite: #454646;
+$coin: #868989;
+$smoke: #c6c8c8;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$secondary-font-color: $gray;
-$action-color: $blue;
+$base-font-color: $graphite;
+$secondary-font-color: $coin;
+$action-color: $lake;
 
 // Borders
-$base-border-color: $light-gray;
+$base-border-color: $smoke;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
 $viewport-background-color: whitesmoke;
 $base-background-color: white;
-$error-background-color: $red;
+$error-background-color: $cadmium;
 
 // Focus
 $focus-outline-color: rgba($action-color, 0.4);
@@ -61,13 +61,13 @@ $focus-outline: $focus-outline-width solid $focus-outline-color;
 $focus-outline-offset: 0.125rem;
 
 // Effects
-$dark-gradient: linear-gradient(140deg, $dark-gray 0%, $black-gray 100%);
+$dark-gradient: linear-gradient(140deg, $graphite 0%, $coal 100%);
 $light-gradient: linear-gradient(180deg, $base-background-color 0%, $viewport-background-color 100%);
 $box-shadow:
   inset 0 0.0625rem rgba(black ,0.05),
-  0 1.25rem 1rem -1.5rem rgba($dark-gray, 0.5),
-  0 0.75rem 1.75rem -0.25rem rgba($dark-gray, 0.6),
-  0 1.25rem 2.5rem rgba($dark-gray, 0.3);
+  0 1.25rem 1rem -1.5rem rgba($graphite, 0.5),
+  0 0.75rem 1.75rem -0.25rem rgba($graphite, 0.6),
+  0 1.25rem 2.5rem rgba($graphite, 0.3);
 $form-element-box-shadow:
   inset 0 0.0625rem rgba(black ,0.05),
   0 1.125rem 1rem rgba(black, 0.1),
@@ -75,5 +75,5 @@ $form-element-box-shadow:
 $form-element-box-shadow--focus: 0 0 0 0.125rem $action-color;
 
 // Animations
-$base-duration: 150ms;
+$base-duration: 175ms;
 $base-timing: ease;
