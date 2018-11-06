@@ -111,4 +111,10 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
