@@ -17,11 +17,11 @@ h5,
 h6 {
   font-size: inherit;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $small-vertical-spacing;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $small-vertical-spacing;
 }
 
 a {
@@ -39,5 +39,5 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+  margin: $base-vertical-spacing 0;
 }

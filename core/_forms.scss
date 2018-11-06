@@ -1,6 +1,4 @@
-$_form-background-color: #fff;
-$_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($action-color, 0.7);
+$_form-input-background-color: $base-background-color;
 
 fieldset {
   background-color: transparent;
@@ -9,17 +7,13 @@ fieldset {
   padding: 0;
 }
 
+label,
 legend {
-  font-weight: 600;
-  margin-bottom: $small-spacing / 2;
-  padding: 0;
-}
-
-label {
   display: block;
   font-weight: 600;
   line-height: $heading-line-height;
-  margin-bottom: $small-spacing;
+  margin-bottom: $small-vertical-spacing;
+  padding: 0;
 }
 
 input,
@@ -27,7 +21,7 @@ select,
 textarea {
   display: block;
   font-family: $base-font-family;
-  font-size: 16px;
+  font-size: $form-element-font-size;
 }
 
 [type='color'],
@@ -45,66 +39,76 @@ textarea {
 [type='url'],
 [type='week'],
 input:not([type]),
+select,
 textarea {
   appearance: none;
   background-clip: padding-box;
-  background-color: $_form-background-color;
-  border: $base-border;
+  background-color: $_form-input-background-color;
   border-radius: $base-border-radius;
-  box-shadow: $_form-box-shadow;
+  border: $base-border;
+  box-shadow: none;
   box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
+  font-family: inherit;
+  font-size: $form-element-font-size;
+  font-weight: 400;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-vertical-spacing 0;
+  padding: $base-vertical-spacing / 3;
   width: 100%;
 
-  &:hover {
-    border-color: shade($base-border-color, 20%);
-  }
-
   &:focus {
-    border-color: $action-color;
-    box-shadow: $_form-box-shadow-focus;
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($_form-background-color, 5%);
+    opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
   &::placeholder {
-    color: tint($base-font-color, 40%);
-  }
-
-  + label {
-    margin-top: -4px;
+    color: $secondary-font-color;
   }
 }
 
 textarea {
-  resize: vertical;
   min-height: 8rem;
+  resize: vertical;
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
-  width: 100%;
-}
-
-select {
-  margin-bottom: $small-spacing;
+  margin: 0 0 $base-vertical-spacing 0;
   width: 100%;
 }
 
 [type="checkbox"],
-[type="radio"],
-[type="file"],
-select {
-  &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
-  }
+[type="radio"] {
+  margin: 0 0 $base-vertical-spacing 0;
 }
 
+select {
+  margin: 0 0 $base-vertical-spacing 0;
+  width: 100%;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  appearance: none;
+  border-radius: 0.25rem;
+  border: $base-border;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: $form-element-font-size;
+  font-weight: 400;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-vertical-spacing 0;
+  padding: ($base-vertical-spacing / 3) 1rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
