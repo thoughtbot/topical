@@ -1,6 +1,6 @@
 table {
   border-collapse: collapse;
-  margin: $base-spacing 0;
+  margin: $base-vertical-spacing 0;
   table-layout: fixed;
   text-align: left;
   width: 100%;
@@ -25,6 +25,5 @@ th {
 
 th,
 td {
-  padding: $small-spacing $small-spacing $small-spacing 0;
+  padding: $small-vertical-spacing $small-vertical-spacing $small-vertical-spacing 0;
 }
-
