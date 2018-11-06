@@ -1,0 +1,10 @@
+.tag-list {
+  display: inline;
+}
+
+.tag-list__item {
+
+  &:not(:last-child)::after {
+    content:"\200A";
+  }
+}
