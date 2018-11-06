@@ -10,6 +10,12 @@ $base-font-family:
   "Roboto",
   "Droid Sans",
   sans-serif;
+$secondary-font-family:
+  "Hoefler Text",
+  "Baskerville Old Face",
+  "Garamond",
+  "Times New Roman",
+  serif;
 
 // Line height
 $base-line-height: (5 / 3);
@@ -25,6 +31,7 @@ $base-z-index: 0;
 
 // Font Sizes
 $base-font-size: 0.8125rem;
+$large-font-size: 0.9375rem;
 $form-element-font-size: 0.875rem;
 
 // Letter Spacing
