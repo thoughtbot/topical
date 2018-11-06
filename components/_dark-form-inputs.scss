@@ -1,12 +1,9 @@
 .dark-form-input {
+    -webkit-font-smoothing: antialiased;
     background-color: $graphite;
     background-image: $dark-gradient;
-    -webkit-font-smoothing: antialiased;
     border: 1px solid transparent;
-    box-shadow: inset 0 1px rgba(black ,0.05),
-      0 1.25rem 1rem -1.5rem rgba($graphite, 0.4),
-      0 0.75rem 1.75rem -0.25rem rgba($graphite, 0.4),
-      0 1.25rem 2.5rem rgba($graphite, 0.2);
+    box-shadow: $base-box-shadow;
     color: $smoke;
 
   &:focus,
