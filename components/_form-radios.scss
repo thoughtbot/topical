@@ -1,0 +1,83 @@
+$_radio-size: 1.25rem;
+
+.form-radio {
+  margin-bottom: $base-vertical-spacing;
+}
+
+.form-radio-button--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.form-radio__checkmark {
+  display: inline-block;
+  height: $_radio-size;
+  position: relative;
+  user-select: none;
+  vertical-align: top;
+  width: $_radio-size;
+
+  &::before,
+  &::after {
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    background: $base-font-color;
+    border: $strong-border;
+    box-shadow: inset 0 0.0625rem $coin;
+    height: $_radio-size;
+    width: $_radio-size;
+  }
+
+  &::after {
+    background: $smoke;
+    height: $_radio-size / 2;
+    left: $_radio-size / 2;
+    opacity: 0;
+    top: $_radio-size / 2;
+    transform: translate(-50%, -50%);
+    width: $_radio-size / 2;
+  }
+}
+
+.form-radio__input {
+  border: 0;
+  height: $_radio-size;
+  margin: 0;
+  opacity: 0.001;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  vertical-align: top;
+  width: $_radio-size;
+  z-index: 1;
+
+  &:active + .form-radio__checkmark,
+  &:focus + .form-radio__checkmark {
+    transform: scale(0.95);
+    transform-origin: center center;
+  }
+
+  &:focus + .form-radio__checkmark::before {
+    border: 1px solid $action-color;
+    box-shadow: inset 0 1px rgba($base-background-color, 0.36), 0 0 0 2px $action-color;
+  }
+
+  &:active + .form-radio__checkmark::before {
+    background-color: $strong-border-color;
+    border: 1px solid $strong-border-color;
+    box-shadow: none;
+  }
+
+  &:checked + .form-radio__checkmark::after {
+    opacity: 1;
+  }
+}
+
+.form-radio__label {
+  display: inline;
+}
