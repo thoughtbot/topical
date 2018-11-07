@@ -58,6 +58,12 @@ $_checkbox-size: 1.25rem;
   position: absolute;
   z-index: 1;
 
+  &:active + .form-checkbox__checkmark,
+  &:focus + .form-checkbox__checkmark {
+    transform: scale(0.95);
+    transform-origin: center center;
+  }
+
   &:checked + .form-checkbox__checkmark::after {
     opacity: 1;
   }
@@ -69,7 +75,7 @@ $_checkbox-size: 1.25rem;
 
   &:active + .form-checkbox__checkmark::before {
     background-color: $strong-border-color;
-    border: 1px solid $strong-border-color;
+    border: $strong-border;
     box-shadow: none;
   }
 }
