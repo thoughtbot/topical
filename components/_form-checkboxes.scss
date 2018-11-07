@@ -1,24 +1,24 @@
 $_checkbox-size: 1.25rem;
 
-.checkbox {
+.form-checkbox {
   margin-bottom: $base-vertical-spacing;
 }
 
-.checkbox--disabled {
+.form-checkbox--disabled {
   cursor: default;
   opacity: 0.3;
   pointer-events: none;
 }
 
-.checkbox__checkmark,
-.checkbox__input {
+.form-checkbox__checkmark,
+.form-checkbox__input {
   display: inline-block;
   height: $_checkbox-size;
   vertical-align: top;
   width: $_checkbox-size;
 }
 
-.checkbox__checkmark {
+.form-checkbox__checkmark {
   position: relative;
 
   &::before,
@@ -51,29 +51,29 @@ $_checkbox-size: 1.25rem;
   }
 }
 
-.checkbox__input {
+.form-checkbox__input {
   opacity: 0.001;
   outline: none;
   padding: 0;
   position: absolute;
   z-index: 1;
 
-  &:checked + .checkbox__checkmark::after {
+  &:checked + .form-checkbox__checkmark::after {
     opacity: 1;
   }
 
-  &:focus + .checkbox__checkmark::before {
+  &:focus + .form-checkbox__checkmark::before {
     border: 1px solid $action-color;
     box-shadow: inset 0 1px rgba($base-background-color, 0.36), 0 0 0 2px $action-color;
   }
 
-  &:active + .checkbox__checkmark::before {
+  &:active + .form-checkbox__checkmark::before {
     background-color: $strong-border-color;
     border: 1px solid $strong-border-color;
     box-shadow: none;
   }
 }
 
-.checkbox__label {
+.form-checkbox__label {
   display: inline;
 }
